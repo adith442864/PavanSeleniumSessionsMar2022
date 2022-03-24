@@ -1,0 +1,67 @@
+Selenium Locators - XPath
+---------------------------
+
+xpath
+--------
+XPath is defined as XML path.
+It is a syntax or language for finding any element on the web page using XML path expression. 
+XPath is used to find the location of any element on a webpage using HTML DOM structure.
+XPath can be used to navigate through elements and attributes in DOM. 
+XPath is an address of the element.
+
+Types of xpath
+-------------
+
+1) Absolute/Full xpath
+	/html/body/div[6]/header/div/div[1]/a/img
+	/html/body/section[1]/div/div/div/div/div[2]/div/div/form/fieldset/div[1]/div/input
+	
+
+2) Relative xpath/Partial xpath
+	//*[@id="demo-page"]/body/div[6]/header/div/div[1]/a/img
+	//*[@id="Form_submitRequest_FirstName"]
+
+
+Diff between Absolute & Relative Xpaths
+------------------------------------
+1) Absolute xpath starts from root html node
+   Relative xpath directly jump to element on DOM.
+
+2) Absolute xpath start WITH /
+  Relative xpath STARTS WITH //
+
+3) in Absolute xpath we use only tags/nodes
+   In Relative xpath we use attributes.
+
+How to write xpaths
+-------------
+/html/body/div[1]/div/div[3]/div[1]/img
+
+Syntax of writing relative xpath
+-----------------------
+Syntax: //tagname[@attribute='value']
+
+Example:  //div[@id='divLogo']/img
+	  //input[@name='txtUsername']
+
+
+How to capture xpath automatically
+------------------------------
+1) Firebug, firepath --> firefox  -->deprecated/ not available
+2) Right click on element-->Inspect--> Highlight html code-->Right click-->Copy Xpath
+3) SelectorsHub Extension
+
+Which XPath is prefered? Why?
+Ans: Relative
+
+xpath options
+-----------------
+and
+or
+contains()
+starts-with()
+text()
+
+XPath axes - parent, child, following, preceding, sibling etc....
+-------
+Videos Link:  https://www.youtube.com/playlist?list=PLUDwpEzHYYLut2OnS4GlY7fiSAabRmsz3

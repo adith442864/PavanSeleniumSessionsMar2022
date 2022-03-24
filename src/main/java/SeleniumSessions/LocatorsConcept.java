@@ -1,4 +1,5 @@
-package day15;
+package SeleniumSessions;
+
 
 import java.time.Duration;
 import java.util.List;

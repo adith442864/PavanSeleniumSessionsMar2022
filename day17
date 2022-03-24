@@ -1,0 +1,49 @@
+Selenium webdriver commands
+-----------------------------
+get commands
+conditional commands
+browser commands
+navigational commands
+wait commands
+
+get commands
+----------------
+get()
+getTitle()
+getCurrenturl()
+getPageSource()
+
+
+conditional commands
+--------------
+isDisplayed()
+isEnabled()
+isSelected()
+
+
+browser commands
+------------
+close() - close one browser window
+quit() - close multiple browser windows
+
+navigational commands
+----------------
+navigate().to(url)
+navigate().back()
+navigate.forward()
+navigate.refresh()
+
+findElement()
+findElements()
+
+getText()  - returns the inner text 
+getAttribute('value')
+
+
+getAttribute("id")  -- Email
+getAttribute("name")  -- Email
+getAttribute("class")  --email valid
+
+
+
+<input id='xyz'  value='abc'> email </input>

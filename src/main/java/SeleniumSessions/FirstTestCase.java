@@ -1,4 +1,5 @@
-package day14;
+package SeleniumSessions;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
