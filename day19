@@ -1,0 +1,18 @@
+Selenium WebDriver
+----------------------
+DropDowns
+------------
+1) Find Number of options
+2) Capture all the options
+3) Select option from the Drop-down
+
+Select class
+1) Select drop-down (Normal)
+2) Bootstrap DropDown
+3) Auto suggestion
+
+Links
+-----------------
+1) Find the link and perform click action
+2) Find total number of links in a webpage
+3) Capture all the links print 
