@@ -28,15 +28,23 @@ public class BootStrapDropDownHandle {
 		
 		driver.get("https://www.hdfcbank.com/");
 		
+		Thread.sleep(5000);
+		
+		
 		//select product type:
 		driver.findElement(By.xpath("//div[@class='drp1']//a[@class='btn-primary dropdown-toggle btn-block']")).click();
 		
 		List<WebElement> productTypes = driver.findElements(By.xpath("//ul[@class='dropdown1 dropdown-menu']/li"));
 		
-		System.out.println("Total No of Options: "+productTypes.size());
+		System.out.println("Total Number of Options: "+productTypes.size());
 		
 		//select option:
-		for(WebElement pty: productTypes) {
+		for(WebElement e: productTypes) {
+			//System.out.println(e.getText());
+			if(e.getText().equals("Loans")) {
+				e.click();
+				break;
+			}
 			
 		}
 		
