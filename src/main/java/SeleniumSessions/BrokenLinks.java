@@ -32,7 +32,7 @@ public class BrokenLinks {
 		for(WebElement e: allLinks) {
 			String url = e.getAttribute("href");
 			
-			if(url==null || url.isEmpty() || url.isBlank()) {
+			if(url==null || url.isEmpty()) {
 				System.out.println("URL is empty");
 			}
 			
@@ -49,11 +49,12 @@ public class BrokenLinks {
 				else {
 					System.out.println(httpcon.getResponseCode()+" " +url+ "  " + "is a valid link");
 				}
-				
+					
 			}
 			catch(Exception ex) {
-				ex.printStackTrace();
+				System.out.println("Link is not valid" +link);
 			}
+			
 			//System.out.println("Number of broken links: " +brokenLinks);
 		}
 		

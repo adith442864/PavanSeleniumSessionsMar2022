@@ -1,0 +1,42 @@
+Selenium WebDriver
+--------------
+Alerts/popups
+-----
+driver.switchTo().alert()
+
+dismiss()
+accept()
+sendKeys()
+getText()
+
+
+
+Authencated popup
+------
+driver.get("http://the-internet.herokuapp.com/basic_auth");
+
+Syntax:
+http://username:password@url.com
+
+http://admin:admin@the-internet.herokuapp.com/basic_auth
+
+
+iframes/Frames
+------------------
+
+driver.switchTo().frame("Name of the frame");
+driver.switchTo().frame("ID of the frame");
+driver.switchTo().frame(driver.findElement(By.xpath("//frame"));
+driver.switchTo().frame(index)
+
+Handle Browser windows
+----------------------
+
+driver.getWindowHandle() --> returns the window ID of current window
+driver.getWindowHandles() --> returns teh window ID's of multiple browser windows
+
+driver.switchTo().window(windowID)
+
+
+Single ---> close()
+Multiple browsers --->quit()
