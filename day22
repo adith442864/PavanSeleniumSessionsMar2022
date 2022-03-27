@@ -1,0 +1,31 @@
+Mouse Operations ( Actions Class)
+----------------------------------
+1) Mouse Hover  --- moveToElemement(Target).perform()
+2) Right click   --- contextClick(Element).perform()
+3) Double click  --  doubleClick(Element).perform()
+4) Drag and drop  --- dragAndDrop(source, target).perform()
+
+
+build().perform();
+	
+
+perform();
+  build().perform();
+
+Slider Element  - dragAndDropBy(sliderElement, x, y).perform()
+
+
+Actions Class
+Action Interface
+
+
+perform()
+{
+ build().perform();
+}
+
+
+Assignment
+----------------
+Drag and drop
+https://www.globalsqa.com/demo-site/draganddrop/
