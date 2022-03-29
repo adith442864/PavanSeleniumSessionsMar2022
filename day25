@@ -1,0 +1,32 @@
+Data Driven Testing
+------------------------
+
+Apache POI API
+
+Download link: https://www.apache.org/dyn/closer.lua/poi/release/bin/poi-bin-5.0.0-20210120.zip
+
+
+File-->Workbook-->Sheet-->Rows-->Cell
+
+
+FileInputStream -  open the file in reading ( from java)
+FileOutputStream - open the file for writing ( from java)
+
+XSSFWorkbook  ---> workbook
+XSSFSheet  ------> Sheet
+XSSFRow  --> Row
+XSSFCell -- Cell
+
+
+1) How to read data from excel
+2) How to write data into excel
+
+
+Assingment
+--------------------
+https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calculator
+
+
+Complete tutorial on ApachePOI (Playlist Link) :
+ https://youtube.com/playlist?list=PLUDwpEzHYYLsN1kpIjOyYW6j_GLgOyA07
+ 
