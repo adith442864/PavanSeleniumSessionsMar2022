@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="groupsuite">
+  <test name="grouptest">
+  
+  	<groups>
+  		<run>
+  			<include name="regression" />
+  			<!--  exclude name="sanity" />	-->
+  		</run>
+  	</groups>
+  	
+  	
+    <classes>
+      <class name="MyTests.GroupingTestConcept"/>
+    </classes>
+    
+  </test> 
+</suite> 

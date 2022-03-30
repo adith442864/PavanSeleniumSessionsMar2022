@@ -10,7 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
-
 public class ReadDataFromExcel {
 	
 	private static String TEST_DATA_SHEET = "./src/test/resources/testdata/data.xlsx";

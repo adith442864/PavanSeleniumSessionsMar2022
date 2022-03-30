@@ -1,0 +1,48 @@
+TestNG
+-------------
+TestNG annotations
+
+
+@Test
+
+@BeforeMethod
+@AfterMethod
+@BeforeClass
+@AfterClass
+@BeforeTest
+@AfterTest
+
+@BeforeMethod, @AfterMethod
+TC
+-----
+1) Login - @BeforeMethod
+2) search - @Test
+3) Logout - @AfterMethod
+4) Login
+5) Advanced search - @Test
+6) Logout
+
+@BeforeClass, @AfterClass
+
+TC
+---
+1) Login - @BeforeClass
+2) search - @Test
+3) Advanced search - @Test
+4) Prepaid recharge - @Test
+5) postpaid recharge  - @Test
+6) Logout - @AfterClass
+
+
+dependsOnMethods
+
+Grouping tests
+
+
+
+Assertions - validation points
+------
+Assert class
+
+1) Hard assertions
+2) Soft assertions
