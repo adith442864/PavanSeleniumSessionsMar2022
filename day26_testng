@@ -1,0 +1,52 @@
+TestNG
+-------------
+TestNG -  Test New Generation is Java based automation framework
+
+Advantages:
+-------------
+1) Manage test cases & test suites
+2) We can also group test cases
+3) Prioritize
+4) Parameterization
+5) Parallel testing - Cross browser testing
+6) Reports
+
+Steps:
+----
+1) Install TestNG library within eclipse
+2) Add TestNG Library to java project.
+
+Supported versions:
+-------------------
+Java Version: 1.8.x
+Eclipse Version: 2020-12 (4.18) & Lower versions supporting TestNG
+TestNG Version: 7.2.0 latest (or lower)
+
+*** Note: Follow the document to Install TestNG in Eclipse...
+
+
+TestSuite--> TestCases -- Test Steps
+Package --> Class ---> TestMethods
+
+TC
+-------
+1) Login to application
+2) Logout from application
+3) close
+
+
+TC
+-----
+1) Launch chrome browser and open app
+	https://admin-demo.nopcommerce.com/login
+2) Login
+
+3) Close browser
+
+XML File
+
+
+Creating xml file
+-------------
+1) Manually
+2) automatically( option) 
