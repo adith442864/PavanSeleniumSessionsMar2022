@@ -1,0 +1,56 @@
+Logging
+Page Object Model
+------------------
+
+Logs are like running commentary where we can track all the activities done by automation script.
+
+SOP logging
+-----------
+Disadvatanges...
+
+SOP's are for simple logging, and cannot be used for advanced logging.
+We cannot turn off the logs when required
+Logs are captured in the console, instead of a separate file
+No Time-stamp will be displayed in the required format (Developers may need this from testers)
+We cannot provide earlier logs
+Cannot differentiate between logs (Level of logs)
+
+
+Log4J API 
+-------------
+1) Download Log4J jars and add them to project build path(log4j-core and log4j-api jars only).
+	https://mirrors.estointernet.in/apache/logging/log4j/2.14.1/apache-log4j-2.14.1-bin.zip
+
+
+debug	 for all the general logs
+info 	 for successfull test 
+error 	 for failure test 
+
+2) We need to create log4j.xml configuration file under resources folder( here resources folder should be created inside the project).
+		https://logging.apache.org/log4j/2.x/manual/configuration.html
+
+		
+There are two types of tags 
+	Appenders (Information on where to log)
+	Loggers (Information on what to log)
+
+Log Levels:
+	 All < Trace < Debug < Info < Warn < Error < Fatal < Off 
+
+
+Page Object Model
+------------------
+Page Object Model is a pattern where we maintain page elements in one place.
+
+
+
+
+
+driver.findElement(By.name("value"))
+
+
+By loc=By.name("value")
+driver.findElement(loc);
+
+
+Create page object class using Page Factory..

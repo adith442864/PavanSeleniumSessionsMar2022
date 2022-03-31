@@ -1,0 +1,20 @@
+TestNG Listeners
+-------------------
+
+ITestListener(I) ---> TestListenerAdapter(C)
+
+class MyListener implements ITestListener
+{
+//override methods
+}
+
+or
+
+class MyListener extends TestListenerAdapter
+{
+//override methods
+}
+
+Extent reports
+--------------------
+1) downlaod and add extent report jars to java project in eclipse.
