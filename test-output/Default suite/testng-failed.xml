@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentReports.LoginTest">
+      <class name="Log4j.Log4JLogging">
         <methods>
-          <include name="testLogout"/>
-          <include name="setUp"/>
+          <include name="testRegistration"/>
           <include name="tearDown"/>
-          <include name="testLogin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- ExtentReports.LoginTest -->
+      </class> <!-- Log4j.Log4JLogging -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
