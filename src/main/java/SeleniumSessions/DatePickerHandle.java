@@ -22,18 +22,19 @@ public class DatePickerHandle {
 		driver.get("https://jqueryui.com/datepicker/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.switchTo().frame(0); //swith to frame
+		driver.switchTo().frame(0); //switch to frame
 		//1. Direct - using sendkeys()
-		//driver.findElement(By.xpath(" //input[@id='datepicker']")).sendKeys("03/27/2022"); // MM/DD/YY 
+		//driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("03/27/2022"); // MM/DD/YYYY 
 		
 		//using Date Picker:
-		String year="2022";
+		String year="2020";
 		String month="September";
 		String date="15";
 		
 		driver.findElement(By.xpath(" //input[@id='datepicker']")).click(); // opens the date picker
 		
-		while(true) {
+		while(true) 
+		{
 			String mon = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
 			String yr = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
 			
@@ -41,11 +42,12 @@ public class DatePickerHandle {
 			if(mon.equals(month) && yr.equals(year)) {
 				break;
 			}
-			else {
-				driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); //Forward button
-				//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Back button
+			else 
+			{
+				//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); //Forward button
+				driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Back button
 			}
-			
+				
 		}
 		
 		//select the dates:
@@ -59,14 +61,6 @@ public class DatePickerHandle {
 				break;
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		Thread.sleep(5000);
 		driver.quit();

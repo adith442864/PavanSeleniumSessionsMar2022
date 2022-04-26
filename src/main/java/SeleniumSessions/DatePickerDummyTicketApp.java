@@ -39,13 +39,11 @@ public class DatePickerDummyTicketApp {
 				e.click();
 				break;
 			}
-			
 		}
 		
 		Thread.sleep(5000);
 		driver.quit();
 		
-
 	}
 
 }

@@ -43,9 +43,6 @@ public class FrameHandle {
 		System.out.println(driver.getTitle());
 		
 		
-		
-		
-		
 		Thread.sleep(5000);
 		driver.quit();
 

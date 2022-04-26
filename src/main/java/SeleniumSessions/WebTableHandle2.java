@@ -29,6 +29,8 @@ public class WebTableHandle2 {
 		// how many users are enabled and disabled. 
 		
 		int rows = driver.findElements(By.xpath("//table[@id='resultTable']/tbody/tr")).size();
+		System.out.println("Total No of Rows are:" +rows);
+		
 		int count =0;
 		for(int r=1; r<=rows; r++) {
 			String status = driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr["+r+"]/td[5]")).getText();
@@ -41,9 +43,7 @@ public class WebTableHandle2 {
 		System.out.println("No of disabled users: " +(rows - count));
 		
 		Thread.sleep(5000);
-		driver.quit();
-		
-		
+		driver.quit();	
 
 	}
 
