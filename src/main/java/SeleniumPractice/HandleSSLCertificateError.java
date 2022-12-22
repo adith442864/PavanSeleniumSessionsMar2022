@@ -18,7 +18,7 @@ public class HandleSSLCertificateError {
 		DesiredCapabilities cap=new DesiredCapabilities();	
 		//cap.setAcceptInsecureCerts(true);
 		cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+//		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			
 		
 		ChromeOptions options=new ChromeOptions();
