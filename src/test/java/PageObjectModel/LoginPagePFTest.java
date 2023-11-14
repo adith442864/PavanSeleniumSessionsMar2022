@@ -9,8 +9,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class LoginPagePFTest {
 	
 	WebDriver driver;
@@ -18,8 +16,6 @@ public class LoginPagePFTest {
 	
 	@BeforeClass
 	public void setUp() {
-		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 /*
  * How many rows in a table
  * How many cols in a table
@@ -20,9 +18,7 @@ public class WebTableHandle {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		
 		driver.get("https://www.w3schools.com/html/html_tables.asp");
 		
 		//How many rows in the table:

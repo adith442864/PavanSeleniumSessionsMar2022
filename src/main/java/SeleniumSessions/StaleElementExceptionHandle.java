@@ -1,16 +1,10 @@
 package SeleniumSessions;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import com.google.zxing.NotFoundException;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StaleElementExceptionHandle {
 
@@ -18,7 +12,6 @@ public class StaleElementExceptionHandle {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 		driver.get("http://www.pavantestingtools.com");

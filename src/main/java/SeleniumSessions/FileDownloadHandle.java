@@ -4,13 +4,9 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FileDownloadHandle {
 
@@ -37,8 +33,6 @@ public class FileDownloadHandle {
 		
 		FirefoxOptions option = new FirefoxOptions();
 		option.setProfile(profile);
-		
-		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver(option);
 		
 		

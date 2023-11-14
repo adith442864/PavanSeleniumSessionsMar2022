@@ -6,13 +6,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class HandleSSLCertificateError {
 
 	public static void main(String[] args) {
-		
-		WebDriverManager.chromedriver().setup();
 		
 		//Direct
 		DesiredCapabilities cap=new DesiredCapabilities();	

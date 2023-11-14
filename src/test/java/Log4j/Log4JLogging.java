@@ -12,8 +12,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Log4JLogging {
 	
 	WebDriver driver;
@@ -23,7 +21,6 @@ public class Log4JLogging {
 	public void setup() {
 		logger = LogManager.getLogger("Log4JLogging"); //initialization of logs
 
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		logger.info("browser launched..");
 		

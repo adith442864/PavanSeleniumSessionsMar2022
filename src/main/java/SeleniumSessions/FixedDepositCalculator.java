@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class FixedDepositCalculator {
 
 	static WebDriver driver;
@@ -16,7 +14,6 @@ public class FixedDepositCalculator {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.moneycontrol.com/fixed-income/calculator/state-bank-of-india-sbi/fixed-deposit-calculator-SBI-BSB001.html");
 		driver.manage().window().maximize();

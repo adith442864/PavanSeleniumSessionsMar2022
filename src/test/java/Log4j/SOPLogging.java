@@ -10,8 +10,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class SOPLogging {
 	
 	WebDriver driver;
@@ -19,9 +17,7 @@ public class SOPLogging {
 	@BeforeClass
 	public void setup() {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println("Chrome Browser got launched..");
 		

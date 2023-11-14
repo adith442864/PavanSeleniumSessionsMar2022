@@ -1,18 +1,10 @@
 package SeleniumPractice;
 
-import java.util.HashMap;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DownloadWordFile {
 
@@ -53,7 +45,7 @@ public class DownloadWordFile {
 			  
 			  FirefoxOptions options = new FirefoxOptions(); options.setProfile(profile);
 			  
-			  WebDriverManager.firefoxdriver().setup(); 
+			 
 			  WebDriver driver = new FirefoxDriver(options);
 			 
 

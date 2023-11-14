@@ -5,9 +5,9 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class LoginTest {
 	
@@ -16,10 +16,7 @@ public class LoginTest {
 	
 	@BeforeClass
 	public void setUp() {
-		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().deleteAllCookies();
 		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");

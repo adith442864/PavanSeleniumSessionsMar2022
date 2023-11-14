@@ -1,12 +1,8 @@
 package SeleniumSessions;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HeadlessHandle {
 
@@ -20,10 +16,9 @@ public class HeadlessHandle {
 		WebDriver driver = new ChromeDriver(co); */
 		
 		//firefox
-		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions fo = new FirefoxOptions();
 		//fo.addArguments("--headless");
-		fo.setHeadless(true);
+		fo.addArguments("--headless");
 		WebDriver driver = new FirefoxDriver(fo);
 		
 		driver.get("https://demo.nopcommerce.com/");

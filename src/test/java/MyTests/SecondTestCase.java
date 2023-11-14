@@ -1,16 +1,10 @@
 package MyTests;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SecondTestCase {
 	
@@ -19,8 +13,6 @@ public class SecondTestCase {
   @Test(priority=1)
   public void openApp() {
 	  
-	  WebDriverManager.firefoxdriver().setup();
-	 
 	  driver = new FirefoxDriver();
 	  driver.get("https://admin-demo.nopcommerce.com/login");
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

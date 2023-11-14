@@ -2,6 +2,7 @@ package SeleniumPractice;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +13,10 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.google.common.base.Function;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class FluentWaitEx {
 
 	public static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("https://www.google.com/");

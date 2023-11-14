@@ -2,7 +2,6 @@ package SeleniumSessions;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
@@ -20,15 +19,12 @@ import com.google.zxing.Result;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BarCodeHandle {
 
 	static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException, IOException, NotFoundException {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

@@ -1,16 +1,10 @@
 package SeleniumSessions;
 
-import java.util.HashMap;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DownloadPDFFile {
 
@@ -45,9 +39,7 @@ public class DownloadPDFFile {
 		FirefoxOptions option = new FirefoxOptions();
 		option.setProfile(profile);
 		
-		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver(option);
-		
 		
 		driver.get("https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/");
 		driver.findElement(By.xpath("//tbody/tr[1]/td[5]/a[1]")).click();

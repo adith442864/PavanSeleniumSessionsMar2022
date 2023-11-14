@@ -11,16 +11,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class FileUploadHandle {
-
 
 	static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 		driver.get("https://www.monsterindia.com/");
